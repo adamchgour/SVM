@@ -12,15 +12,10 @@ class DataInspection(BasicDataInspection):
         
     def inspect(self):
         print(self.data.describe())
-    
-class DataInspectionWithPlot(BasicDataInspection):
-    def __init__(self, data):
-        self.data = data
+        print(self.data.info())
         
-    def inspect(self):
-        self.data.hist()
-        plt.show()
 class StatisticalInspection(BasicDataInspection):
+    '''This class is used to inspect the data using basic statistical methods'''
     def __init__(self, data):
         self.data = data
     def inspect(self):
