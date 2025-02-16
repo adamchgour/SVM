@@ -14,7 +14,6 @@ class PairplotAnalysis(MultivariatesAnalysis):
         '''plots the relationship between all numerical features'''
         
         plt.figure(figsize=(12, 6))
-        plt.title("Relationship between all numerical features")
         sns.pairplot(df)
         plt.show()
 
